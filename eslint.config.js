@@ -3,8 +3,6 @@ import stylistic from '@stylistic/eslint-plugin';
 import perfectionist from 'eslint-plugin-perfectionist';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
-import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-import globals from 'globals';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -22,7 +20,6 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
       '@stylistic': stylistic,
       perfectionist,
-      unicorn: eslintPluginUnicorn,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
